@@ -1,6 +1,8 @@
 # Next.js Gemini Chat
 
-This is a simple Next.js application that allows users to chat with the Google Gemini API.
+This is a simple Next.js application for chatting with Google Gemeni LLM with responses read aloud with the Speech Synthesis TTS JS library.
+
+<img width="654" alt="image" src="https://github.com/user-attachments/assets/897257d4-44a3-40f6-b803-04b4ac4a2a2c">
 
 ## Getting Started
 
