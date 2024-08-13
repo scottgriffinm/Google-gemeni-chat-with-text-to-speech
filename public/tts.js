@@ -1,10 +1,3 @@
-// Helper functions
-
-// Select a DOM element using a CSS selector
-function getElement(selector) {
-    return document.querySelector(selector);
-}
-
 // Function to find and store the Moira voice from available voices
 function findMoiraVoice(synthInstance) {
     const voices = synthInstance.getVoices();
@@ -17,7 +10,7 @@ function findMoiraVoice(synthInstance) {
 }
 
 // Function to speak the provided text using Moira's voice
-function speakText(text) {
+function speakText(text, callback) {
     const synthInstance = window.speechSynthesis || null;
     if (!synthInstance) return;  // Exit if speech synthesis is not supported
 
@@ -31,6 +24,13 @@ function speakText(text) {
     utterThis.voice = moiraVoice;  // Set the voice to Moira
     utterThis.pitch = 0.7;  // Set pitch
     utterThis.rate = 0.75;  // Set rate
+
+    utterThis.onend = () => {
+        if (callback) {
+            callback();  // Call the callback after TTS finishes
+        }
+    };
+
     synthInstance.speak(utterThis);  // Speak the text
 }
 
