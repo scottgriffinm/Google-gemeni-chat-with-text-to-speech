@@ -1,4 +1,4 @@
-# Next.js Google Gemini Voice Chat
+# Google Gemini Voice Chat (Next.js)
 
 This is a simple Next.js application that allows users to voice chat with Google Gemeni via its public API.
 
@@ -7,7 +7,7 @@ This is a simple Next.js application that allows users to voice chat with Google
 ## Getting Started
 
 1. Clone the repository.
-2. Install the dependencies with `npm install`.
+2. Install the dependencies with `npm install`. (you must have Node.js version >=18 installed)
 3. Register your Google Gemini API key and add it to `.env.local` i.e. API_KEY=<api_key_here>.
 4. Run the development server with `npm run dev`.
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
