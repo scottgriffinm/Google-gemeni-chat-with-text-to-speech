@@ -1,4 +1,4 @@
-# Next.js Gemini Chat
+# Next.js Gemini Voice Chat
 
 This is a simple Next.js application that allows users to chat with the Google Gemini API.
 
